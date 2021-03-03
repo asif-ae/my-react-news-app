@@ -12,7 +12,7 @@ const TopHeadlines = () => {
   }, []);
   return (
     <div>
-      <h1>Top Headlines: {articles.length}</h1>
+      <h1 className="text-center">Top Headlines: {articles.length}</h1>
       {
         articles.map(article => <News main={article} key={article.url}></News>)
       }
